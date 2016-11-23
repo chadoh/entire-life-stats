@@ -1,7 +1,8 @@
 {
-  "name": "stats",
+  "name": "entire-life-stats",
   "version": "0.1.0",
   "private": true,
+  "license": "ISC",
   "devDependencies": {
     "react-scripts": "0.7.0"
   },

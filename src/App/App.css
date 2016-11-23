@@ -1,0 +1,11 @@
+.App-header {
+  background-color: #222;
+  text-align: center;
+}
+
+.App-header small {
+  color: white;
+  font-family: monospace;
+  font-size: 0.5em;
+  font-weight: normal;
+}
