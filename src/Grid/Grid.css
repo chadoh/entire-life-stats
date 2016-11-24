@@ -1,0 +1,12 @@
+.Grid {
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1%;
+}
+
+.Grid > * {
+  flex-basis: 10em;
+  flex-grow: 1;
+}

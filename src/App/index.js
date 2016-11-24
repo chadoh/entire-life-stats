@@ -8,7 +8,7 @@ export default class App extends Component {
     return (
       <div>
         <div className="App-header">
-          <h1><Logo /><small>stats</small></h1>
+          <h1><Logo /></h1>
         </div>
         <Money />
       </div>

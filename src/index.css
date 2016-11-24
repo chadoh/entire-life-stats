@@ -9,6 +9,7 @@ body * {
   margin: 0;
 }
 
-body * + * {
-  margin-top: 1.5em;
+h1, h2, h3 {
+  font-family: "SignPainter", "American Typewriter", "Courier New", sans-serif;
+  font-weight: lighter;
 }

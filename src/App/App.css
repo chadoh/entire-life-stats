@@ -1,11 +1,8 @@
-.App-header {
-  background-color: #222;
-  text-align: center;
-}
+/* theme: https://coolors.co/01baef-0cbaba-380036-26081c-150811 */
 
-.App-header small {
+.App-header {
+  background-color: #380036;
+  text-align: center;
   color: white;
-  font-family: monospace;
-  font-size: 0.5em;
-  font-weight: normal;
+  margin-bottom: 1.5em;
 }
