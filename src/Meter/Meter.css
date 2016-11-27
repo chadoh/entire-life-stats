@@ -1,0 +1,74 @@
+.Meter {
+  display: block;
+  margin: 1em auto;
+
+  width: 100%;
+  height: 2em;
+
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  border: 1px solid #ccc;
+  border-radius: 3px;
+
+  /* Firefox */
+  background: none; /* Required to get rid of the default background prop. */
+  background-color: whiteSmoke;
+}
+
+.Meter::-webkit-meter-bar {
+  background: none; /* Important to get rid of default background. */
+  background-color: whiteSmoke;
+}
+
+.Meter::-webkit-meter-optimum-value {
+  transition: width .5s;
+
+  background-color: #0CBABA;
+  background-size: 100% 100%;
+}
+
+.Meter::-webkit-meter-optimum-value:hover {
+  background-color: #0CBABA;
+
+  transition: width .5s;
+  width: 100% !important; /* !important keyword used to override the inline style in ebkit browsers. */
+}
+
+.Meter::-moz-meter-bar {
+
+  background-color: #0CBABA;
+  background-size: 100% 100%;
+}
+
+.Meter-gauge {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+
+  background-color: whiteSmoke;
+
+  width: 100%;
+  height: 2em;
+
+  display: block;
+  position: relative;
+}
+
+.Meter-bar {
+  background-color: #0CBABA;
+  background-size: 100% 100%;
+  border-radius: 4px;
+  display: block;
+  height: inherit;
+  overflow: visible;
+}
+
+.Meter-text {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  line-height: 2em;
+  width: 100%;
+}

@@ -1,12 +1,18 @@
 .Grid {
   display: flex;
   flex-flow: row wrap;
-  margin-right: auto;
-  margin-left: auto;
+  margin-left: -0.5em;
+  margin-top: -2em;
   padding: 0 1%;
 }
 
 .Grid > * {
-  flex-basis: 10em;
+  flex-basis: 14em;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-top: 2em;
+  margin-left: 0.5em;
 }
