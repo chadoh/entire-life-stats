@@ -1,9 +1,7 @@
 import React from 'react';
-import Grid from '../Grid';
-import Box from '../Box';
 import AllTimeRevenue from './AllTimeRevenue';
-import MonthlyGoalProgress from './MonthlyGoalProgress';
-import GrossRevenue from './GrossRevenue';
+import GoalProgress from './GoalProgress';
+import Help from './Help';
 
 const MONEY_API = 'https://entire-life.herokuapp.com/stats/money';
 
@@ -41,17 +39,11 @@ export default class Money extends React.Component {
   render() {
     const { data } = this.state;
     return (
-      <Box title="the money">
-        <Grid>
-          <div>
-            <AllTimeRevenue data={data} />
-          </div>
-          <div>
-            <MonthlyGoalProgress data={data} />
-            <GrossRevenue data={data} />
-          </div>
-        </Grid>
-      </Box>
+      <div>
+        <AllTimeRevenue data={data} />
+        <GoalProgress data={data} />
+        <Help />
+      </div>
     );
   }
 }

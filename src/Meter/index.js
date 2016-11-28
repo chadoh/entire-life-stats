@@ -1,7 +1,7 @@
 import React from 'react';
 import './Meter.css';
 
-export default ({low, max, optimum, title, value}) => (
+export default ({low, max, optimum, text, title, value}) => (
   <meter
     className="Meter"
     low={low}
@@ -12,7 +12,7 @@ export default ({low, max, optimum, title, value}) => (
   >
     <div className="Meter-gauge">
       <span className="Meter-bar" style={{width: `${100 * value / max}%`}}/>
-      <span className="Meter-text">${value}</span>
+      <span className="Meter-text">{text}</span>
     </div>
   </meter>
 )

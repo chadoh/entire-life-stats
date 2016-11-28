@@ -1,8 +1,21 @@
-/* theme: https://coolors.co/01baef-0cbaba-380036-26081c-150811 */
+.App-title {
+  display: inline-block;
+  font-family: "SignPainter", "American Typewriter", "Courier New", sans-serif;
+  font-weight: lighter;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  transform: rotate(-10deg);
+  position: absolute;
+  top: 0.5em;
+}
 
-.App-header {
-  background-color: #150811;
-  text-align: center;
-  color: white;
-  margin-bottom: 1.5em;
+.App-lead {
+  margin: 6em auto 4em;
+  max-width: 20em;
+}
+
+.App-main {
+  width: 94%;
+  max-width: 800px;
+  margin: 0 auto;
 }

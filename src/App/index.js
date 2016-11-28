@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
 import Money from '../Money';
-import Logo from '../Logo';
 
 export default class App extends Component {
   render() {
     return (
       <div>
-        <div className="App-header">
-          <h1><Logo /></h1>
-        </div>
-        <Money />
+        <h1 className="App-title">stats.entire.life</h1>
+        <p className="App-lead">
+          stats.entire.life is charting the nitty-gritty business details of
+          running <a href="https://entire.life">Entire.Life</a>
+        </p>
+        <main className="App-main">
+          <Money />
+        </main>
       </div>
     );
   }
