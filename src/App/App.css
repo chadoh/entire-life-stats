@@ -1,6 +1,6 @@
 .App-title {
   display: inline-block;
-  font-family: "SignPainter", "American Typewriter", "Courier New", sans-serif;
+  font-family: "SignPainter", "American Typewriter", "Courier New", monospace;
   font-weight: lighter;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -10,8 +10,9 @@
 }
 
 .App-lead {
-  margin: 6em auto 4em;
+  margin: 6em auto 3em;
   max-width: 20em;
+  width: 70%;
 }
 
 .App-main {

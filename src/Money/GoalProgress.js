@@ -1,6 +1,6 @@
 import React from 'react';
 import Loader from '../Loader';
-import Meter from '../Meter';
+import Gauge from 'react-gauge';
 
 const ANNUAL_GOAL = 360;
 
@@ -22,18 +22,14 @@ const renderMeter = data => {
   return (
     <section>
       <h2>Here's how we're doing on our goal to make ${ANNUAL_GOAL} in {year}:</h2>
-      <Meter
-        low={ANNUAL_GOAL / 2}
-        max={ANNUAL_GOAL}
-        value={total}
-        title="$"
-        text={
-          `$${total}
-          (${Math.round(100 * total / ANNUAL_GOAL)}% there!)`
-        }
-      />
+      <div style={{textAlign: 'center'}}>
+        <Gauge
+          value={Math.round(100 * total / ANNUAL_GOAL)}
+        />
+        <p><strong>${total} raised</strong></p>
+      </div>
       <p>
-        Here's how we'd use the annual money we raise:
+        Here's how we'd use our annual income:
         <ul>
           <li><strong>$360 &ndash; Entire.Life Grows Old With You</strong>: All expenses covered. Entire.Life will pay for itself, so it can run as-is for a long time.</li>
           <li><strong>$5,000 &ndash; Faster Improvements</strong>: We can afford to pay a contractor for occassional small jobs.</li>
