@@ -1,0 +1,38 @@
+.Help-button {
+  border: 4px solid grey;
+  border-radius: 0.5em;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2) inset;
+  color: black;
+  display: block;
+  margin-bottom: 1em;
+  padding: 2em 1em;
+  text-decoration: none;
+  max-width: 400px;
+}
+
+.Help-button:hover, .Help-button:focus {
+  color: black;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.Help-button:active {
+  color: black;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4) inset;
+}
+
+.Help-button:after {
+  content: "\2192";
+  margin-left: 0.5em;
+}
+
+.Help-buy {
+  border-color: #A5E03E;
+}
+
+.Help-twitter {
+  border-color: #1DA1F2;
+}
+
+.Help-facebook {
+  border-color: #3F589B;
+}
