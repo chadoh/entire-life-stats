@@ -1,23 +1,16 @@
 .Help-button {
-  border: 4px solid grey;
+  border: 3px solid grey;
   border-radius: 0.5em;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2) inset;
   color: black;
   display: block;
   margin-bottom: 1em;
-  padding: 2em 1em;
+  padding: 1rem;
   text-decoration: none;
   max-width: 400px;
 }
 
-.Help-button:hover, .Help-button:focus {
-  color: black;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
-}
-
-.Help-button:active {
-  color: black;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4) inset;
+.Help-button:last-child {
+  margin-right: 0;
 }
 
 .Help-button:after {
@@ -25,14 +18,38 @@
   margin-left: 0.5em;
 }
 
-.Help-buy {
+.Help-button:hover, .Help-button:focus, .Help-button:active {
+  color: black;
+}
+
+.Help-buy:hover, .Help-buy:focus, .Help-buy:active {
   border-color: #A5E03E;
 }
 
-.Help-twitter {
+.Help-twitter:hover, .Help-twitter:focus, .Help-twitter:active {
   border-color: #1DA1F2;
 }
 
-.Help-facebook {
+.Help-facebook:hover, .Help-facebook:focus, .Help-facebook:active {
   border-color: #3F589B;
 }
+
+@media(min-width: 736px) {
+  .Help-buttonGroup {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-between;
+  }
+
+  .Help-button {
+    text-align: center;
+    margin-right: 0.5em;
+    max-width: none;
+  }
+
+  .Help-button:after {
+    content: "";
+    margin-left: 0;
+  }
+}
+

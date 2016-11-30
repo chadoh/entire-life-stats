@@ -46,14 +46,14 @@ export default ({data}) => {
           }}
         />
       </VictoryChart>
+      <p>How to read this graph:</p>
+      <ul>
+        <li>The starting downslope is the cost of hosting our API</li>
+        <li>The downturn in ~Feb 2016 is the cost of hosting our UI</li>
+        <li>The sharper downturn in July 2016 is the cost of a bigger database (more users = no more free-tier database)</li>
+        <li>The up-ticks are when lovely people <a href="https://entire.life/emporium">paid for add-ons</a></li>
+      </ul>
       <p>
-        How to read this graph:
-        <ul>
-          <li>The starting downslope is the cost of hosting our API</li>
-          <li>The downturn in ~Feb 2016 is the cost of hosting our UI</li>
-          <li>The sharper downturn in July 2016 is the cost of a bigger database (more users = no more free-tier database)</li>
-          <li>The up-ticks are when lovely people <a href="https://entire.life/emporium">paid for add-ons</a></li>
-        </ul>
         <strong>Note</strong>: The cost of labor is <strong>NOT</strong> factored in here.
       </p>
     </section>

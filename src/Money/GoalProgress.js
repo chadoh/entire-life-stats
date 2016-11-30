@@ -30,12 +30,12 @@ const renderMeter = data => {
       </div>
       <p>
         Here's how we'd use our annual income:
-        <ul>
-          <li><strong>$360 &ndash; Entire.Life Grows Old With You</strong>: All expenses covered. Entire.Life will pay for itself, so it can run as-is for a long time.</li>
-          <li><strong>$5,000 &ndash; Faster Improvements</strong>: We can afford to pay a contractor for occassional small jobs.</li>
-          <li><strong>$50,000 &ndash; Legit Business</strong>: It makes sense for one person to work on Entire.Life full-time.</li>
-        </ul>
       </p>
+      <ul>
+        <li><strong>$360 &ndash; Entire.Life Grows Old With You</strong>: All expenses covered. Entire.Life will pay for itself, so it can run as-is for a long time.</li>
+        <li><strong>$5,000 &ndash; Faster Improvements</strong>: We can afford to pay a contractor for occassional small jobs.</li>
+        <li><strong>$50,000 &ndash; Legit Business</strong>: It makes sense for one person to work on Entire.Life full-time.</li>
+      </ul>
     </section>
   );
 }
