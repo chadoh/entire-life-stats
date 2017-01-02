@@ -21,7 +21,7 @@ const renderMeter = data => {
 
   return (
     <section>
-      <h2>Here's how we're doing on our goal to make ${ANNUAL_GOAL} in {year}:</h2>
+      <h3>Here's how we're doing on our goal to make ${ANNUAL_GOAL} in {year}:</h3>
       <div style={{textAlign: 'center'}}>
         <Gauge
           value={Math.round(100 * total / ANNUAL_GOAL)}

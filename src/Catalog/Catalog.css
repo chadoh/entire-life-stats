@@ -1,0 +1,38 @@
+.Catalog {
+  margin-bottom: 2em;
+}
+
+.Catalog-grid {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: -1em;
+}
+
+.Catalog a {
+  flex-basis: 10em;
+  flex-grow: 1;
+  display: block;
+  text-decoration: none;
+  margin-left: 1em;
+  border: 1px solid #ddd;
+  color: #222;
+  border-radius: 5px;
+  padding: 1em;
+  position: relative;
+}
+
+.Catalog a:hover, .Catalog a:focus {
+  border-color: #0CBABA;
+  color: #222;
+}
+
+.Catalog img {
+  width: 100%;
+}
+
+.Catalog-gridItemHead {
+  background-color: white;
+  position: absolute;
+  top: -0.8em;
+  padding: 0 0.25em;
+}

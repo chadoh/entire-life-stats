@@ -3,7 +3,7 @@ import './Help.css';
 
 export default () => (
   <section>
-    <h2>Help us out:</h2>
+    <h3>Help us out:</h3>
     <div className="Help-buttonGroup">
       <a
         className="Help-button Help-buy"

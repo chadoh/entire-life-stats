@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
+import Section from '../Section';
 import Money from '../Money';
 import Users from '../Users';
+import Catalog from '../Catalog';
 
 export default class App extends Component {
   render() {
@@ -13,12 +15,11 @@ export default class App extends Component {
           running <a href="https://entire.life">Entire.Life</a>
         </p>
         <main className="App-main" role="main">
-          <div id="users">
+          <Section title="The Users" id="users">
             <Users />
-          </div>
+          </Section>
           <div id="default">
-            <a href="#money">The Money</a>
-            <a href="#users">The Users</a>
+            <Catalog />
           </div>
           <div id="money">
             <Money />

@@ -29,11 +29,11 @@ export default ({data}) => {
 
   return (
     <section>
-      <h2>
+      <h3>
         Here's how we
         {total < 0 ? ' lost ' : ' made '}
         ${Math.round(Math.abs(total))} over the life of the business:
-      </h2>
+      </h3>
       <VictoryChart padding={{left: 15, top: 0, right: 25, bottom: 10}}>
         <VictoryLine
           data={accumulated}

@@ -38,7 +38,7 @@ export default class Users extends React.Component {
     if (!data) return null;
     return (
       <div>
-        <h2>Here's how we got {data.count} people signed up for Entire.Life:</h2>
+        <h3>Here's how we got {data.count} people signed up for Entire.Life:</h3>
       </div>
     );
   }

@@ -1,0 +1,21 @@
+.Section {
+}
+.Section-header {
+  border-bottom: 1px solid #ddd;
+  padding: 0.5em 0;
+  width: 110%;
+  margin-left: -5%;
+}
+
+.Section-header h2 {
+  display: inline;
+  padding-left: 5%;
+}
+
+.Section-header a {
+  float: right;
+  font-size: 2em;
+  text-decoration: none;
+  color: #222;
+  padding-right: 5%;
+}
