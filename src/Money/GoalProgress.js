@@ -6,7 +6,7 @@ const ANNUAL_GOAL = 360;
 
 const totalForYear = data => {
   const now = new Date();
-  const startOfYear = new Date(now.getFullYear());
+  const startOfYear = new Date(now.getFullYear(), 0, 1);
 
   return data.in
     .filter(datum => datum.date >= startOfYear)
