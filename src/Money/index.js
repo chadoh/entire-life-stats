@@ -2,15 +2,9 @@ import React from 'react';
 import AllTimeRevenue from './AllTimeRevenue';
 import GoalProgress from './GoalProgress';
 import Help from './Help';
+import toDate from '../helpers/toDate';
 
 const MONEY_API = 'https://entire-life.herokuapp.com/stats/money';
-
-const toDate = str => {
-  const [year, month, day] = str.split("T")[0]
-    .split("-").slice(0, 3).map(Number);
-
-  return new Date(year, month - 1, day);
-};
 
 const toDatum = (multiplier = 1) => datum => ({
   date: toDate(datum.date),
@@ -20,9 +14,7 @@ const toDatum = (multiplier = 1) => datum => ({
 export default class Money extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      data: null,
-    }
+    this.state = { data: null };
   }
 
   componentDidMount() {

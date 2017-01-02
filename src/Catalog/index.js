@@ -1,5 +1,6 @@
 import React from 'react';
 import money from './money.png';
+import users from './users.png';
 import './Catalog.css';
 
 export default () => (
@@ -12,7 +13,7 @@ export default () => (
       </a>
       <a href="#users">
         <span className="Catalog-gridItemHead">The Users</span>
-        <img src={money} alt="" />
+        <img src={users} alt="" />
       </a>
     </div>
   </div>

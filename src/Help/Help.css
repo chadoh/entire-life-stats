@@ -34,6 +34,15 @@
   border-color: #3F589B;
 }
 
+.Help-producthunt:hover, .Help-producthunt:focus, .Help-producthunt:active {
+  border-color: #da552f;
+}
+
+.Help-reddit:hover, .Help-reddit:focus, .Help-reddit:active {
+  border-color: #5f99cf;
+}
+
+
 @media(min-width: 736px) {
   .Help-buttonGroup {
     display: flex;

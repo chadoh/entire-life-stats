@@ -4,11 +4,7 @@ import {
   VictoryLine, VictoryChart, VictoryAxis
 } from 'victory';
 import numberToMoney from '../helpers/numberToMoney';
-
-const dateToString = epoch => {
-  const [, month, , year] = (new Date(epoch)).toDateString().split(' ');
-  return `${month} ${year}`;
-};
+import dateToString from '../helpers/dateToString';
 
 const accumulate = data =>
   data.in.concat(data.out).sort(

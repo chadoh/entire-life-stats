@@ -15,14 +15,14 @@ export default class App extends Component {
           running <a href="https://entire.life">Entire.Life</a>
         </p>
         <main className="App-main" role="main">
+          <Section title="The Money" id="money">
+            <Money />
+          </Section>
           <Section title="The Users" id="users">
             <Users />
           </Section>
           <div id="default">
             <Catalog />
-          </div>
-          <div id="money">
-            <Money />
           </div>
         </main>
       </div>
