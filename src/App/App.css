@@ -20,3 +20,16 @@
   max-width: 32em;
   margin: 0 auto;
 }
+
+main > * {
+  display: none;
+}
+
+main > *:last-child, main > *:target {
+  display: block;
+}
+
+main > *:target ~ * {
+  display: none;
+}
+
