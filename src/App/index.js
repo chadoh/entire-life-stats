@@ -3,6 +3,7 @@ import './App.css';
 import Section from '../Section';
 import Money from '../Money';
 import Users from '../Users';
+import Engagement from '../Engagement';
 import Catalog from '../Catalog';
 
 export default class App extends Component {
@@ -20,6 +21,9 @@ export default class App extends Component {
           </Section>
           <Section title="The Users" id="users">
             <Users />
+          </Section>
+          <Section title="Engagement" id="engagement">
+            <Engagement />
           </Section>
           <div id="default">
             <Catalog />
