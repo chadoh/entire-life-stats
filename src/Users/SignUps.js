@@ -22,7 +22,7 @@ export default ({data}) => {
   return (
     <div>
       <h3>Here's how we got {data.count} people signed up for Entire.Life:</h3>
-      <VictoryChart padding={{left: 40, top: 10, right: 25, bottom: 40}}>
+      <VictoryChart padding={{left: 50, top: 10, right: 25, bottom: 40}}>
         <VictoryLine
           data={accumulated}
           style={{
